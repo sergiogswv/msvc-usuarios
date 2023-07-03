@@ -11,4 +11,7 @@ public interface UsuarioService {
     Usuario guardar(Usuario usuario);
     void eliminar(Long id);
 
+    Optional<Usuario> porEmail(String email);
+    boolean existePorEmail(String email);
+
 }
